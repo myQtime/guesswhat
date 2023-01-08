@@ -1,0 +1,84 @@
+body {
+    overflow: hidden;
+}
+
+.bg {
+    font-size: 50px;
+    background-image: url('/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.name {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+.playname {
+    position: absolute;
+    top: 20%;
+    left: -5px;
+}
+.name1 {
+    transform: scale(0.55);
+}
+
+.name2 {
+    position: absolute;
+    top: 140px;
+    transform: scale(0.55);
+    margin-left: -170px;
+}
+
+.title {
+    position: absolute;
+    top: -30%;
+    left: 125%;
+}
+
+.start,
+.btnGroup {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 30px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btnGroup button {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.textBox {
+    width: 55vw;
+    height: 75vh;
+    /* background-color: #fff; */
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(174, 0, 0);
+}
+
+.riddleBox {
+    background-image: url('/riddleBox.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%, 50%;
+}
+.inputGroup {
+    position: absolute;
+    width: 15%;
+    top: 35%;
+    right: 5%;
+}
+
+.inputGroup input {
+    color: red;
+}

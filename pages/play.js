@@ -91,7 +91,7 @@ export default function Home() {
                         className="riddleBox d-flex justify-content-center align-items-center"
                         style={{ height: '55%' }}
                     >
-                        <p class="fw-bold text-center pt-3">
+                        <p class="QA fw-bold text-center pt-3">
                             {QA == 'Q' ? `${a[now].question}` : ''}
                             {QA == 'A' ? `${a[now].answer}` : ''}
                         </p>

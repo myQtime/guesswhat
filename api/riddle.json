@@ -1,5 +1,6 @@
 [
     { "number": 1, "question": "黃金布，包銀條，身體彎彎兩頭翹", "hint": "射一水果", "answer": "香蕉" },
+    { "number": 1, "hint": "麻將", "answer": "香蕉" },
     { "number": 2, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" },
     { "number": 3, "question": "地心引力 ", "hint": "射一字", "answer": "動" },
     { "number": 4, "question": "一人一張口，下面長隻手", "hint": "射一字", "answer": "拿" },
@@ -15,7 +16,7 @@
     { "number": 9, "question": " ㄊㄞˊ", "hint": "射一人名", "answer": "祝英台(注音台)" },
     { "number": 10, "question": " 十", "hint": "射台灣地名", "answer": "田中" },
     { "number": 11, "question": "製造日期與有效日期是同一天的産品是什麽?", "hint": "射一用品", "answer": "報紙" },
-    { "number": 12, "question": "成績優良", "hint": "射台灣地名", "answer": "學甲" },
+    { "number": 12, "question": "D＝M/V 是什麼公式?", "hint": "國中自然", "answer": "密度＝質量/體積" },
     {
         "number": 13,
         "question": "白又方，嫩又香，能做菜，能煮湯，豆子是它爹和媽，它和爹媽不一樣",
@@ -61,5 +62,6 @@
     { "number": 40, "question": "虛胖", "hint": "射一食品", "answer": "肉鬆" },
     { "number": 41, "question": "有弟弟有哥哥有妹妹", "hint": "射一職業", "answer": "空姐" },
     { "number": 42, "question": "公共廁所", "hint": "射一城市", "answer": "倫敦" },
-    { "number": 43, "question": "上邊毛，下邊毛，中間一顆黑葡萄", "hint": "射一器官", "answer": "眼睛" }
+    { "number": 43, "question": "上邊毛，下邊毛，中間一顆黑葡萄", "hint": "射一器官", "answer": "眼睛" },
+    { "number": 44, "question": "成績優良", "hint": "射台灣地名", "answer": "學甲" }
 ]

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import name1 from '/public/name1.png'
 import name2 from '/public/name2.png'
+import majang from '/public/majang.jpg'
 import title from '/public/title.png'
 
 export default function Home() {

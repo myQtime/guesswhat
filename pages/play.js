@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import name1 from '/public/name1.png'
 import name2 from '/public/name2.png'
+import majang from '/public/majang.jpg'
 import riddle from '/api/riddle.json'
 import { useState, useEffect } from 'react'
 
@@ -92,7 +93,15 @@ export default function Home() {
                         style={{ height: '55%' }}
                     >
                         <p class="QA fw-bold text-center pt-3">
-                            {QA == 'Q' ? `${a[now].question}` : ''}
+                            {QA == 'Q' ? (
+                                a[now].question ? (
+                                    `${a[now].question}`
+                                ) : (
+                                    <Image src={majang} width={500} />
+                                )
+                            ) : (
+                                ''
+                            )}
                             {QA == 'A' ? `${a[now].answer}` : ''}
                         </p>
                     </div>

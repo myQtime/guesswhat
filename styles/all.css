@@ -20,18 +20,18 @@ body {
 .playname {
     position: absolute;
     top: 20%;
-    left: -5px;
+    left: -15px;
 }
 .name1 {
-    transform: scale(0.55);
+    transform: scale(0.45);
     animation: swing 3s infinite ease-in-out;
 }
 
 .name2 {
     position: absolute;
     top: 140px;
-    transform: scale(0.55);
-    margin-left: -170px;
+    transform: scale(0.45);
+    margin-left: -180px;
     animation: swing 2.2s infinite ease-in-out;
 }
 
@@ -60,12 +60,16 @@ body {
 }
 
 .textBox {
-    width: 45vw;
+    width: 50vw;
     height: 75vh;
     /* background-color: #fff; */
     font-size: 50px;
     font-weight: bold;
     color: rgb(174, 0, 0);
+}
+
+.introtext {
+    font-size: 42px;
 }
 
 .riddleBox {
@@ -92,14 +96,14 @@ body {
 
 @keyframes swing {
     0% {
-        transform: rotate(-6deg) scale(0.55) translateX(15px);
+        transform: rotate(-6deg) scale(0.45) translateX(15px);
     }
 
     50% {
-        transform: rotate(6deg) scale(0.55) translateX(-15px);
+        transform: rotate(6deg) scale(0.45) translateX(-15px);
     }
 
     100% {
-        transform: rotate(-6deg) scale(0.55) translateX(15px);
+        transform: rotate(-6deg) scale(0.45) translateX(15px);
     }
 }

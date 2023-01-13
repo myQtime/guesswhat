@@ -1,5 +1,5 @@
 [
-    { "number": 1, "question": "一", "hint": "射一成語", "answer": "接二連三" },
+    { "number": 1, "question": "黃金布，包銀條，身體彎彎兩頭翹", "hint": "射一水果", "answer": "香蕉" },
     { "number": 2, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" },
     { "number": 3, "question": "地心引力 ", "hint": "射一字", "answer": "動" },
     { "number": 4, "question": "一人一張口，下面長隻手", "hint": "射一字", "answer": "拿" },
@@ -38,7 +38,7 @@
     { "number": 22, "question": "地層下陷", "hint": "台灣地名", "answer": "深坑" },
     { "number": 23, "question": "有點自大", "hint": "射一字", "answer": "臭" },
     { "number": 24, "question": "曹操字孟德，劉備字玄德，那伍佰呢？", "hint": "動腦一下", "answer": "五百字心得" },
-    { "number": 25, "question": "2>5,5>0,0>2", "hint": "", "answer": "猜拳" },
+    { "number": 25, "question": "2>5,5>0,0>2", "hint": "沒有提示", "answer": "猜拳" },
     { "number": 26, "question": "沒到手想搶到手，搶到手卻扔出手", "hint": "射一運動", "answer": "籃球" },
     {
         "number": 27,
@@ -49,7 +49,7 @@
     { "number": 28, "question": "少了一本書", "hint": "射一成語", "answer": "缺一不可（缺一BOOK）" },
     { "number": 29, "question": "一隻北極熊朝我們走過來", "hint": "射一成語", "answer": "有備而來(有bear來)" },
     { "number": 30, "question": "目加兩點，不當貝字猜", "hint": "射一字", "answer": "賀" },
-    { "number": 31, "question": "黃金布，包銀條，身體彎彎兩頭翹", "hint": "射一水果", "answer": "香蕉" },
+    { "number": 31, "question": "祖父母", "hint": "射一飲料", "answer": "椰奶" },
     { "number": 32, "question": "一隻蜜蜂停在日曆上", "hint": "射一成語", "answer": "風和日麗(蜂和日曆)" },
     { "number": 33, "question": "一家有四口，還有一隻狗", "hint": "射一字", "answer": "器" },
     { "number": 34, "question": "青蛙噎到", "hint": "射一蔬菜", "answer": "南瓜" },

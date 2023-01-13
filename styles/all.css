@@ -24,6 +24,7 @@ body {
 }
 .name1 {
     transform: scale(0.55);
+    animation: swing 3s infinite ease-in-out;
 }
 
 .name2 {
@@ -31,6 +32,7 @@ body {
     top: 140px;
     transform: scale(0.55);
     margin-left: -170px;
+    animation: swing 2.2s infinite ease-in-out;
 }
 
 .title {
@@ -58,7 +60,7 @@ body {
 }
 
 .textBox {
-    width: 55vw;
+    width: 45vw;
     height: 75vh;
     /* background-color: #fff; */
     font-size: 50px;
@@ -75,10 +77,29 @@ body {
 .inputGroup {
     position: absolute;
     width: 15%;
-    top: 35%;
+    top: 25%;
     right: 5%;
 }
 
 .inputGroup input {
     color: red;
+}
+
+.unFnish,
+.unFnishText {
+    font-size: 24px;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-6deg) scale(0.55) translateX(15px);
+    }
+
+    50% {
+        transform: rotate(6deg) scale(0.55) translateX(-15px);
+    }
+
+    100% {
+        transform: rotate(-6deg) scale(0.55) translateX(15px);
+    }
 }

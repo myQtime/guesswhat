@@ -3,13 +3,69 @@ import Image from 'next/image'
 import name1 from '/public/name1.png'
 import name2 from '/public/name2.png'
 import riddle from '/api/riddle.json'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Home() {
     const a = riddle
     const [now, setNow] = useState(0)
+    const [largest, setLargest] = useState(0)
+
     const [QA, setQA] = useState('Q')
 
+    const [notFnishAry, setNotFnishAry] = useState([])
+
+    const [showNotFnish, setShowNotFnish] = useState('')
+
+    useEffect(() => {
+        let string = ''
+        let ary = notFnishAry
+        notFnishAry.forEach(function (item, i) {
+            if (i === notFnishAry.length - 1) {
+                string += item
+            } else string += item + '、'
+        })
+        setShowNotFnish(string)
+    }, [notFnishAry])
+
+    const checkNow = () => {
+        if (now == largest) {
+            setNow(now + 1)
+            setLargest(largest + 1)
+        } else if (now !== largest) {
+            setNow(largest)
+        }
+    }
+
+    const checkNotFnishAry = () => {
+        // setNotFnishAry([...notFnishAry, a[now].number])
+        let ary = [...notFnishAry, a[now].number]
+        let setAry = [...new Set(ary)]
+        setAry.sort(function (a, b) {
+            return a - b // a - b > 0
+        })
+        setNotFnishAry([...setAry])
+    }
+
+    const changeAry = () => {
+        let ary = notFnishAry
+        ary.forEach(function (item, i) {
+            if (item === a[now].number) {
+                ary.splice(i, 1)
+            }
+        })
+        setNotFnishAry([...ary])
+    }
+
+    const jumpTO = () => {
+        const jumpInput = document.querySelector('#jumpInput')
+        let ary = notFnishAry
+        ary.forEach(function (item, i) {
+            if (item == jumpInput.value) {
+                setNow(jumpInput.value - 1)
+            }
+        })
+        jumpInput.value = ''
+    }
     return (
         <div>
             <Head>
@@ -47,30 +103,63 @@ export default function Home() {
                 </div>
 
                 <div className="btnGroup">
-                    <button
-                        type="button"
-                        className="btn btn-danger rounded-pill"
-                        onClick={(e) => {
-                            setQA('A')
-                        }}
-                    >
-                        看答案
-                    </button>
-                    <button
-                        type="button"
-                        className="btn btn-danger rounded-pill"
-                        onClick={(e) => {
-                            setNow(now + 1), setQA('Q')
-                        }}
-                    >
-                        再想想，先下一題
-                    </button>
+                    {QA == 'Q' ? (
+                        <button
+                            type="button"
+                            className="btn btn-danger rounded-pill"
+                            onClick={(e) => {
+                                setQA('A'), changeAry()
+                            }}
+                        >
+                            看答案
+                        </button>
+                    ) : (
+                        ''
+                    )}
+
+                    {QA == 'Q' ? (
+                        <button
+                            type="button"
+                            className="btn btn-danger rounded-pill"
+                            onClick={(e) => {
+                                checkNow(), checkNotFnishAry()
+                            }}
+                        >
+                            再想想，先下一題
+                        </button>
+                    ) : (
+                        ''
+                    )}
+                    {QA == 'A' ? (
+                        <button
+                            type="button"
+                            className="btn btn-danger rounded-pill"
+                            onClick={(e) => {
+                                checkNow(), setQA('Q')
+                            }}
+                        >
+                            繼續挑戰下一題
+                        </button>
+                    ) : (
+                        ''
+                    )}
                 </div>
-                <div className="inputGroup input-group">
-                    <input type="text" class="form-control" placeholder="輸入題號" />
-                    <button class="btn btn-danger" type="button" id="button-addon2">
-                        GO!
-                    </button>
+                <div className="inputGroup ">
+                    <p className="unFnishText">未答題題目</p>
+                    <div className="input-group">
+                        <input type="text" class="form-control" id="jumpInput" placeholder="輸入題號" />
+                        <button
+                            class="btn btn-danger"
+                            type="button"
+                            id="button-addon2"
+                            onClick={() => {
+                                jumpTO(), setQA('Q')
+                            }}
+                        >
+                            GO!
+                        </button>
+                    </div>
+                    <div className="unFnish mt-1"> {showNotFnish}</div>
                 </div>
             </div>
         </div>

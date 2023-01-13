@@ -29,7 +29,9 @@ export default function Home() {
     }, [notFnishAry])
 
     const checkNow = () => {
-        if (now == largest) {
+        if (largest == 54) {
+            return
+        } else if (now == largest) {
             setNow(now + 1)
             setLargest(largest + 1)
         } else if (now !== largest) {

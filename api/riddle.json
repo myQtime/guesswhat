@@ -1,7 +1,12 @@
 [
     { "number": 1, "question": "黃金布，包銀條，身體彎彎兩頭翹", "hint": "射一水果", "answer": "香蕉" },
-    { "number": 1, "hint": "麻將", "answer": "香蕉" },
-    { "number": 2, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" },
+
+    {
+        "number": 2,
+        "question": "不長藤兒不結瓜，下起雨來才開花，花兒開到頭頂上，人到哪兒它到哪",
+        "hint": "射一物",
+        "answer": "雨傘"
+    },
     { "number": 3, "question": "地心引力 ", "hint": "射一字", "answer": "動" },
     { "number": 4, "question": "一人一張口，下面長隻手", "hint": "射一字", "answer": "拿" },
     { "number": 5, "question": "天將亮時", "hint": "射一國家", "answer": "約旦" },
@@ -33,7 +38,7 @@
         "hint": "射一水果",
         "answer": "西瓜"
     },
-    { "number": 19, "question": "籠中鳥", "hint": "射一人名", "answer": "關羽" },
+    { "number": 19, "hint": "麻將", "answer": "三六九筒帶發財" },
     { "number": 20, "question": "有弟弟有姊姊有妹妹", "hint": "射一字", "answer": "歌" },
     { "number": 21, "question": "只要大人去就好", "hint": "射一成語", "answer": "不約而同(兒童)" },
     { "number": 22, "question": "地層下陷", "hint": "台灣地名", "answer": "深坑" },
@@ -63,5 +68,21 @@
     { "number": 41, "question": "有弟弟有哥哥有妹妹", "hint": "射一職業", "answer": "空姐" },
     { "number": 42, "question": "公共廁所", "hint": "射一城市", "answer": "倫敦" },
     { "number": 43, "question": "上邊毛，下邊毛，中間一顆黑葡萄", "hint": "射一器官", "answer": "眼睛" },
-    { "number": 44, "question": "成績優良", "hint": "射台灣地名", "answer": "學甲" }
+    { "number": 44, "question": "成績優良", "hint": "射台灣地名", "answer": "學甲" },
+    { "number": 45, "question": "籠中鳥", "hint": "射一人名", "answer": "關羽" },
+    {
+        "number": 46,
+        "question": "洗時沒有下水，吃時沒有進嘴，聽時不需用耳，打時不需拳腿。",
+        "hint": "射一活動",
+        "answer": "打麻將"
+    },
+    { "number": 47, "question": "一個球，熱烘烘，落在西，出在東", "hint": "射一自然物", "answer": "太陽" },
+    {
+        "number": 48,
+        "question": "鐵籠子裡關鐵鳥，翅膀雖多飛不掉，夏天有它人涼爽，寒冬臘月不需要。 （猜一電器）電風扇",
+        "hint": "射一物",
+        "answer": "電風扇"
+    },
+    { "number": 49, "question": "15分鐘=1000元", "hint": "射一成語", "answer": "一刻千金" },
+    { "number": 50, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" }
 ]

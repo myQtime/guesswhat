@@ -79,10 +79,25 @@
     { "number": 47, "question": "一個球，熱烘烘，落在西，出在東", "hint": "射一自然物", "answer": "太陽" },
     {
         "number": 48,
-        "question": "鐵籠子裡關鐵鳥，翅膀雖多飛不掉，夏天有它人涼爽，寒冬臘月不需要。 （猜一電器）電風扇",
+        "question": "鐵籠子裡關鐵鳥，翅膀雖多飛不掉，夏天有它人涼爽，寒冬臘月不需要",
         "hint": "射一物",
         "answer": "電風扇"
     },
     { "number": 49, "question": "15分鐘=1000元", "hint": "射一成語", "answer": "一刻千金" },
-    { "number": 50, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" }
+    { "number": 50, "question": "雙水雙火", "hint": "射台灣地名", "answer": "淡水" },
+    { "number": 51, "question": "一頭牛，沒尾巴，張開嘴，要說話", "hint": "射一字", "answer": "告" },
+    {
+        "number": 52,
+        "question": "有時落在山腰，有時挂在樹梢，有時像面圓鏡，有時像把鐮刀",
+        "hint": "射一自然物",
+        "answer": "月亮"
+    },
+    { "number": 53, "question": "十五天", "hint": "射一字", "answer": "胖" },
+    { "number": 54, "question": "上下一體", "hint": "射一字", "answer": "卡" },
+    {
+        "number": 55,
+        "question": "弟弟長，哥哥短，兩人賽跑大家看， 弟弟跑了十二圈，哥哥一圈才跑完",
+        "hint": "射一物",
+        "answer": "鍾表"
+    }
 ]

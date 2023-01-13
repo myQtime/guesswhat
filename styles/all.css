@@ -20,7 +20,7 @@ body {
 .playname {
     position: absolute;
     top: 20%;
-    left: -15px;
+    left: -35px;
 }
 .name1 {
     transform: scale(0.45);

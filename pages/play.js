@@ -83,7 +83,7 @@ export default function Home() {
             </Head>
             <div className="bg d-flex justify-content-center">
                 <div className="playname">
-                    <div className="position-relative">
+                    <div className="position-relative h-100">
                         <Image src={name1} className="name1" />
                         <Image src={name2} className="name2" />
                     </div>
@@ -91,21 +91,35 @@ export default function Home() {
                 <div className="textBox d-flex-column justify-content-center mt-4">
                     <p class="fw-bold text-center my-4  ">第{a[now].number}題</p>
                     <div
-                        className="riddleBox d-flex justify-content-center align-items-center"
+                        className="riddleBox d-flex justify-content-center align-items-center position-relative"
                         style={{ height: '55%' }}
                     >
-                        <p class="QA fw-bold text-center pt-3">
+                        {!a[now].question && QA == 'Q' ? (
+                            <div className="majang h-100">
+                                <Image src={majang} fill />
+                            </div>
+                        ) : (
+                            <p class="QA fw-bold text-center pt-3">
+                                {' '}
+                                {QA == 'Q' ? a[now].question : ''}
+                                {QA == 'A' ? a[now].answer : ''}
+                            </p>
+                        )}
+
+                        {/* <p class="QA fw-bold text-center pt-3">
                             {QA == 'Q' ? (
                                 a[now].question ? (
                                     `${a[now].question}`
                                 ) : (
-                                    <Image src={majang} width={500} />
+                                    <div className="majang">
+                                        <Image src={majang} fill />
+                                    </div>
                                 )
                             ) : (
                                 ''
                             )}
                             {QA == 'A' ? `${a[now].answer}` : ''}
-                        </p>
+                        </p> */}
                     </div>
 
                     <p class="fw-bold text-end me-5 mb-4 pe-5" style={{ height: '10%' }}>

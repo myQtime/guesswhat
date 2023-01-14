@@ -25,7 +25,7 @@ export default function Home() {
             </Head>
             <div className="bg d-flex justify-content-center">
                 <div className="playname">
-                    <div className="position-relative">
+                    <div className="position-relative h-100">
                         <Image src={name1} className="name1" />
                         <Image src={name2} className="name2" />
                     </div>
@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="textBox d-flex-column justify-content-center mt-4">
                     <p class="fw-bold text-center my-4  ">說明</p>
                     <div className="mt-5 d-flex justify-content-center align-items-center" style={{ height: '55%' }}>
-                        <p class="fw-bold  pt-3">
+                        <p class="introtext fw-bold  pt-3">
                             「射燈謎」這種名稱說法是起源於古代的一種「射覆」的猜物遊戲，「射」是猜測，「覆」是覆蓋，即謎底被覆蓋，源於漢代的猜測遊戲。
                         </p>
                     </div>

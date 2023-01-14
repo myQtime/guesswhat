@@ -25,7 +25,7 @@ export default function Home() {
             </Head>
             <div className="bg d-flex justify-content-center">
                 <div className="playname">
-                    <div className="position-relative">
+                    <div className="position-relative h-100">
                         <Image src={name1} className="name1" />
                         <Image src={name2} className="name2" />
                     </div>

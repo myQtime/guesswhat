@@ -41,6 +41,59 @@ body {
     left: 125%;
 }
 
+@media (max-width: 960px) {
+    .title {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        transform: translateY(-50%) translateX(-50%);
+        top: 105%;
+        left: 50%;
+    }
+    .playname {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        top: 0%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .name {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        top: 0%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .name1 {
+        position: absolute;
+        top: 40%;
+        left: -120%;
+        animation: swingXS 3s infinite ease-in-out;
+    }
+    .name2 {
+        position: absolute;
+        top: 75%;
+        left: -80%;
+        margin-left: 0px;
+        animation: swingXS 2.2s infinite ease-in-out;
+    }
+    .playname .name1 {
+        position: absolute;
+        top: 40%;
+        left: -150%;
+        animation: swingXS 3s infinite ease-in-out;
+    }
+    .playname .name2 {
+        position: absolute;
+        top: 75%;
+        left: -120%;
+        margin-left: 0px;
+        animation: swingXS 2.2s infinite ease-in-out;
+    }
+}
+
 .start,
 .btnGroup {
     font-size: 36px;
@@ -62,10 +115,14 @@ body {
 .textBox {
     width: 50vw;
     height: 75vh;
-    /* background-color: #fff; */
     font-size: 42px;
     font-weight: bold;
     color: rgb(174, 0, 0);
+}
+
+.unFnish,
+.unFnishText {
+    font-size: 24px;
 }
 
 .QA {
@@ -93,9 +150,32 @@ body {
     color: red;
 }
 
-.unFnish,
-.unFnishText {
-    font-size: 24px;
+@media (max-width: 960px) {
+    .textBox,
+    .introtext {
+        font-size: 24px;
+    }
+    .start,
+    .btnGroup,
+    .btnGroup button {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .unFnish,
+    .unFnishText {
+        font-size: 16px;
+    }
+}
+
+.majang {
+    width: 600px;
+    height: 250px;
+}
+@media (max-width: 960px) {
+    .majang {
+        transform: scale(1.05);
+        width: 100%;
+    }
 }
 
 @keyframes swing {
@@ -109,5 +189,19 @@ body {
 
     100% {
         transform: rotate(-6deg) scale(0.45) translateX(15px);
+    }
+}
+
+@keyframes swingXS {
+    0% {
+        transform: rotate(-6deg) scale(0.3) translateX(15px);
+    }
+
+    50% {
+        transform: rotate(6deg) scale(0.3) translateX(-15px);
+    }
+
+    100% {
+        transform: rotate(-6deg) scale(0.3) translateX(15px);
     }
 }

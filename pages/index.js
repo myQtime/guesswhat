@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import name1 from '/public/name1.png'
 import name2 from '/public/name2.png'
-import majang from '/public/majang.jpg'
 import title from '/public/title.png'
 
 export default function Home() {
@@ -21,10 +20,10 @@ export default function Home() {
             </Head>
             <div className="bg">
                 <div className="name">
-                    <div className="position-relative">
+                    <div className="position-relative h-100">
                         <Image src={name1} className="name1" />
                         <Image src={name2} className="name2" />
-                        <Image src={title} className="title" />
+                        <Image src={title} className="title" object-fit="contain" />
                     </div>
                 </div>
                 <Link href="/intro">

@@ -150,7 +150,7 @@ export default function Home() {
                                 checkNow(), checkNotFnishAry()
                             }}
                         >
-                            再想想，先下一題
+                            再想想，下一題
                         </button>
                     ) : (
                         ''

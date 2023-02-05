@@ -29,7 +29,7 @@ export default function Home() {
     }, [notFnishAry])
 
     const checkNow = () => {
-        if (largest == 54) {
+        if (largest == 55) {
             return
         } else if (now == largest) {
             setNow(now + 1)
@@ -136,7 +136,7 @@ export default function Home() {
                                 setQA('A'), changeAry()
                             }}
                         >
-                            看答案
+                            {a[now].number === 56 ? 'END' : ' 看答案'}
                         </button>
                     ) : (
                         ''
@@ -163,7 +163,7 @@ export default function Home() {
                                 checkNow(), setQA('Q')
                             }}
                         >
-                            繼續挑戰下一題
+                            {a[now].number === 56 ? 'END' : '繼續挑戰下一題'}
                         </button>
                     ) : (
                         ''

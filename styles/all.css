@@ -151,28 +151,19 @@ body {
 }
 
 @media (max-width: 960px) {
-    .textBox {
-        height: 75vh;
-    }
-
     .textBox,
     .introtext {
-        font-size: 20px;
+        font-size: 24px;
     }
     .start,
-    .btnGroup {
-        font-size: 16px;
-        padding: 0 15px;
-        top: 92%;
-    }
-
+    .btnGroup,
     .btnGroup button {
-        font-size: 16px;
+        font-size: 18px;
         padding: 0 15px;
     }
     .unFnish,
     .unFnishText {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
